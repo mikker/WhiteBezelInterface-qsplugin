@@ -7,12 +7,43 @@
 
 @implementation QSSquareBezelInterface
 
+- (NSColor*)colorWithHexColorString:(NSString*)inColorString
+{
+  NSColor* result = nil;
+  unsigned colorCode = 0;
+  unsigned char redByte, greenByte, blueByte;
+
+  if (nil != inColorString)
+  {
+    NSScanner* scanner = [NSScanner scannerWithString:inColorString];
+    (void) [scanner scanHexInt:&colorCode]; // ignore error
+  }
+  redByte = (unsigned char)(colorCode >> 16);
+  greenByte = (unsigned char)(colorCode >> 8);
+  blueByte = (unsigned char)(colorCode); // masks off high bits
+
+  result = [NSColor
+            colorWithCalibratedRed:(CGFloat)redByte / 0xff
+            green:(CGFloat)greenByte / 0xff
+            blue:(CGFloat)blueByte / 0xff
+            alpha:1.0];
+  return result;
+}
+
 - (id)init {
 	return [self initWithWindowNibName:@"QSSBInterface"];
 }
 
 - (void)windowDidLoad {
 	standardRect = centerRectInRect([[self window] frame], [[NSScreen mainScreen] frame]);
+
+  NSString *fontName = @"HelveticaNeue";
+  NSString *fontNameBold = @"HelveticaNeue-Bold";
+  NSColor *whiteColor = [self colorWithHexColorString:@"FFFFFF"];
+  NSColor *blackColor = [self colorWithHexColorString:@"000000"];
+  NSColor *blackTransparentColor = [NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.6];
+//  NSColor *purpleColor = [self colorWithHexColorString:@"B42C86"];
+  NSColor *highlighColor = [self colorWithHexColorString:@"EEEEEE"];
 
 	[super windowDidLoad];
 	QSWindow *window = (QSWindow *)[self window];
@@ -25,19 +56,16 @@
 	[window setHideOffset:NSMakePoint(0, 0)];
 	[window setShowOffset:NSMakePoint(0, 0)];
 
-	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithDouble:0.15], @"duration", nil] forKey:kQSWindowExecEffect];
-	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide", @"type", [NSNumber numberWithDouble:0.15], @"duration", nil] forKey:kQSWindowFadeEffect];
-	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithDouble:0.25], @"duration", nil, [NSNumber numberWithDouble:0.25] , @"brightnessB", @"QSStandardBrightBlending", @"brightnessFn", nil] forKey:kQSWindowCancelEffect];
-
-	[(QSBezelBackgroundView *)[[self window] contentView] setRadius:5.0];
+	[(QSBezelBackgroundView *)[[self window] contentView] setRadius:8.0];
 	[(QSBezelBackgroundView *)[[self window] contentView] setGlassStyle:QSGlossUpArc];
 
 	[[self window] setFrame:standardRect display:YES];
 
-	[[[self window] contentView] bind:@"color" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1B" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-	[[self window] bind:@"hasShadow" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSBezelHasShadow" options:nil];
-	[details bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-	[commandView bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+  [self.window.contentView setColor:whiteColor];
+  [self.window setHasShadow:YES];
+  [commandView setTextColor:blackColor];
+  [details setTextColor:blackTransparentColor];
+  [details setFont:[NSFont fontWithName:fontName size:11]];
 
 	[[self window] setMovableByWindowBackground:NO];
 	[(QSWindow *)[self window] setFastShow:YES];
@@ -45,47 +73,40 @@
 	NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
 	for(QSSearchObjectView *theControl in theControls) {
 		QSObjectCell *theCell = [theControl cell];
-		[theCell setAlignment:NSCenterTextAlignment];
-		[theControl setPreferredEdge:NSMinYEdge];
-		[theControl setResultsPadding:NSMinY([dSelector frame])];
+//		[theControl setPreferredEdge:NSMinYEdge];
+		[theControl setResultsPadding:6];
 		[theControl setPreferredEdge:NSMinYEdge];
 		[(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(0, NSMinY([iSelector frame]))];
 		[(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(0, NSMinY([dSelector frame]))];
 
 		[theCell setShowDetails:NO];
-		[theCell setTextColor:[NSColor whiteColor]];
 		[theCell setState:NSOnState];
-
+    [theCell setAlignment:NSCenterTextAlignment];
     [theCell setCellRadiusFactor:24];
-
-		[theCell bind:@"highlightColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1A" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+    [theCell setBackgroundColor:whiteColor];
+//    [theCell setTextColor:purpleColor];
 		[theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-	 }
+    [theCell setHighlightColor:highlighColor];
+    [theCell setIconSize:NSSizeFromCGSize(CGSizeMake(96,96))];
+    [theCell setNameFont:[NSFont fontWithName:fontNameBold size:14]];
+  }
 
 	[self contractWindow:nil];
 }
 
 - (void)dealloc {
-	if ([self isWindowLoaded]) {
-		[[[self window] contentView] unbind:@"color"];
-		[[self window] unbind:@"hasShadow"];
-		[details unbind:@"textColor"];
-		[commandView unbind:@"textColor"];
-		NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
-		for(NSControl * theControl in theControls) {
-			NSCell *theCell = [theControl cell];
-			[theCell unbind:@"highlightColor"];
-			[theCell unbind:@"textColor"];
-			[(QSObjectCell *)theCell setTextColor:nil];
-			[(QSObjectCell *)theCell setHighlightColor:nil];
-		}
-	}
-	[super dealloc];
+  if ([self isWindowLoaded]) {
+    NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
+    for(NSControl * theControl in theControls) {
+      NSCell *theCell = [theControl cell];
+      [theCell unbind:@"textColor"];
+    }
+  }
+  [super dealloc];
 }
 
-
 - (NSSize) maxIconSize {
-	return QSSize48;
+	return QSSize128;
 }
 
 - (void)showMainWindow:(id)sender {
@@ -149,8 +170,3 @@
 }
 
 @end
-
-@implementation QSSQObjectCell
-
-@end
-

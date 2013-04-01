@@ -15,11 +15,5 @@
 @end
 
 @interface NSWindow (QSBCInterfaceController)
-
--(NSTimeInterval)animationResizeTime:(NSRect)newWindowFrame;
-
-@end
-
-
-@interface QSSQObjectCell : QSObjectCell
+- (NSTimeInterval)animationResizeTime:(NSRect)newWindowFrame;
 @end
