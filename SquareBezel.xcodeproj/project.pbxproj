@@ -7,29 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42A8DF5170A06B8007CC713 /* QSSBInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */; };
 		E470B7E31709F3A0000169F2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470B7E21709F3A0000169F2 /* Cocoa.framework */; };
 		E470B7E91709F3A0000169F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E470B7E71709F3A0000169F2 /* InfoPlist.strings */; };
-		E470B7F11709F3A0000169F2 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E470B7F01709F3A0000169F2 /* Release.xcconfig */; };
-		E470B7F51709F3A0000169F2 /* SquareBezelAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F41709F3A0000169F2 /* SquareBezelAction.m */; };
-		E470B7F81709F3A0000169F2 /* SquareBezelSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F71709F3A0000169F2 /* SquareBezelSource.m */; };
+		E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSSBInterface.xib; sourceTree = "<group>"; };
 		E470B7DF1709F3A0000169F2 /* SquareBezel.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareBezel.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E470B7E21709F3A0000169F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		E470B7E61709F3A0000169F2 /* SquareBezel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SquareBezel-Info.plist"; sourceTree = "<group>"; };
+		E470B7E61709F3A0000169F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		E470B7E81709F3A0000169F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E470B7EB1709F3A0000169F2 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		E470B7EC1709F3A0000169F2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		E470B7ED1709F3A0000169F2 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		E470B7EF1709F3A0000169F2 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
-		E470B7F01709F3A0000169F2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Release.xcconfig; path = /private/tmp/QS/Configuration; sourceTree = "<absolute>"; };
-		E470B7F21709F3A0000169F2 /* qs_fix_project.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = qs_fix_project.py; sourceTree = "<group>"; };
-		E470B7F31709F3A0000169F2 /* SquareBezelAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareBezelAction.h; sourceTree = "<group>"; };
-		E470B7F41709F3A0000169F2 /* SquareBezelAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareBezelAction.m; sourceTree = "<group>"; };
-		E470B7F61709F3A0000169F2 /* SquareBezelSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareBezelSource.h; sourceTree = "<group>"; };
-		E470B7F71709F3A0000169F2 /* SquareBezelSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareBezelSource.m; sourceTree = "<group>"; };
+		E470B7F01709F3A0000169F2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSSquareBezelInterface.h; sourceTree = "<group>"; };
+		E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSSquareBezelInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +69,9 @@
 		E470B7E41709F3A0000169F2 /* SquareBezel */ = {
 			isa = PBXGroup;
 			children = (
-				E470B7F21709F3A0000169F2 /* qs_fix_project.py */,
-				E470B7F31709F3A0000169F2 /* SquareBezelAction.h */,
-				E470B7F41709F3A0000169F2 /* SquareBezelAction.m */,
-				E470B7F61709F3A0000169F2 /* SquareBezelSource.h */,
-				E470B7F71709F3A0000169F2 /* SquareBezelSource.m */,
+				E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */,
+				E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */,
+				E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */,
 				E470B7EA1709F3A0000169F2 /* Configuration */,
 				E470B7E51709F3A0000169F2 /* Supporting Files */,
 			);
@@ -86,7 +81,7 @@
 		E470B7E51709F3A0000169F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E470B7E61709F3A0000169F2 /* SquareBezel-Info.plist */,
+				E470B7E61709F3A0000169F2 /* Info.plist */,
 				E470B7E71709F3A0000169F2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -103,8 +98,8 @@
 				E470B7F01709F3A0000169F2 /* Release.xcconfig */,
 			);
 			name = Configuration;
-			path = ../../../../../../private/tmp/QS/Configuration;
-			sourceTree = "<group>";
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -159,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E470B7E91709F3A0000169F2 /* InfoPlist.strings in Resources */,
-				E470B7F11709F3A0000169F2 /* Release.xcconfig in Resources */,
+				E42A8DF5170A06B8007CC713 /* QSSBInterface.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,8 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E470B7F51709F3A0000169F2 /* SquareBezelAction.m in Sources */,
-				E470B7F81709F3A0000169F2 /* SquareBezelSource.m in Sources */,
+				E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,80 +201,31 @@
 /* Begin XCBuildConfiguration section */
 		E470B7F91709F3A0000169F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E470B7EC1709F3A0000169F2 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		E470B7FA1709F3A0000169F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E470B7F01709F3A0000169F2 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		E470B7FC1709F3A0000169F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SquareBezel/SquareBezel-Prefix.pch";
-				INFOPLIST_FILE = "SquareBezel/SquareBezel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qsplugin;
 			};
 			name = Debug;
 		};
 		E470B7FD1709F3A0000169F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SquareBezel/SquareBezel-Prefix.pch";
-				INFOPLIST_FILE = "SquareBezel/SquareBezel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qsplugin;
 			};
 			name = Release;
 		};
@@ -303,6 +248,7 @@
 				E470B7FD1709F3A0000169F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
