@@ -6,7 +6,7 @@
 #import <QSInterface/QSResizingInterfaceController.h>
 
 
-@interface QSSquareBezelInterface : QSResizingInterfaceController {
+@interface BBWhiteBezelInterface : QSResizingInterfaceController {
 	NSRect standardRect;
 	IBOutlet NSTextField *details;
 }

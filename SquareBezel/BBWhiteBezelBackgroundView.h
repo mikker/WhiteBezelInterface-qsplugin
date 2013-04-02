@@ -1,6 +1,6 @@
 //
 //  QSSBBezelBackgroundView.h
-//  SquareBezel
+//  BBWhiteBezel
 //
 //  Created by Mikkel Malmberg on 4/2/13.
 //  Copyright (c) 2013 BRNBW. All rights reserved.
@@ -9,7 +9,7 @@
 #import <AppKit/AppKit.h>
 #import <QSEffects/QSShading.h>
 
-@interface QSSBBezelBackgroundView : NSView
+@interface BBWhiteBezelBackgroundView : NSView
 {
   NSColor *color;
   NSColor *borderColor;

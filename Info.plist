@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Square Bezel Interface</string>
+	<string>White Bezel Interface</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Square Bezel Interface</string>
+	<string>White Bezel Interface</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -23,7 +23,7 @@
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
-		<string>Mikkel Malmberg</string>
+		<string>BRNBW / Mikkel Malmberg</string>
 		<key>categories</key>
 		<array>
 			<string>Interfaces</string>
@@ -37,8 +37,8 @@
 	<dict>
 		<key>QSCommandInterfaceControllers</key>
 		<dict>
-			<key>Square Bezel Interface</key>
-			<string>QSSquareBezelInterface</string>
+			<key>White Bezel Interface</key>
+			<string>BBWhiteBezelInterface</string>
 		</dict>
 	</dict>
 </dict>

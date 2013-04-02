@@ -1,22 +1,22 @@
 //
 //  QSSBObjectView.m
-//  SquareBezel
+//  BBWhiteBezel
 //
 //  Created by Mikkel Malmberg on 4/1/13.
 //  Copyright (c) 2013 BRNBW. All rights reserved.
 //
 
-#import "QSSBObjectView.h"
+#import "BBWhiteBezelObjectView.h"
 
-@implementation QSSBSearchObjectView
-+ (Class)cellClass { return [QSSBObjectCell class]; }
+@implementation BBWhiteBezelSearchObjectView
++ (Class)cellClass { return [BBWhiteBezelObjectCell class]; }
 @end
 
-@implementation QSSBCollectingSearchObjectView
-+ (Class)cellClass { return [QSSBObjectCell class]; }
+@implementation BBWhiteBezelCollectingSearchObjectView
++ (Class)cellClass { return [BBWhiteBezelObjectCell class]; }
 @end
 
-@implementation QSSBObjectCell
+@implementation BBWhiteBezelObjectCell
 
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {

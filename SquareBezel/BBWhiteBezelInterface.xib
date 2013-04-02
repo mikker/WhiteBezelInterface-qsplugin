@@ -54,7 +54,7 @@
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<string key="NSWindowContentMinSize">{214, 211}</string>
 				<object class="NSView" key="NSWindowView" id="708947105">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -63,9 +63,8 @@
 							<int key="NSvFlags">260</int>
 							<string key="NSFrame">{{384, 33}, {180, 180}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="887944203"/>
-							<string key="NSClassName">QSSBCollectingSearchObjectView</string>
+							<string key="NSClassName">BBWhiteBezelCollectingSearchObjectView</string>
 							<string key="NSExtension">NSImageView</string>
 						</object>
 						<object class="NSCustomView" id="205745587">
@@ -73,9 +72,8 @@
 							<int key="NSvFlags">260</int>
 							<string key="NSFrame">{{200, 33}, {180, 180}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="238152217"/>
-							<string key="NSClassName">QSSBSearchObjectView</string>
+							<string key="NSClassName">BBWhiteBezelSearchObjectView</string>
 							<string key="NSExtension">NSImageView</string>
 						</object>
 						<object class="NSCustomView" id="805529078">
@@ -83,9 +81,8 @@
 							<int key="NSvFlags">260</int>
 							<string key="NSFrame">{{16, 33}, {180, 180}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="205745587"/>
-							<string key="NSClassName">QSSBCollectingSearchObjectView</string>
+							<string key="NSClassName">BBWhiteBezelCollectingSearchObjectView</string>
 							<string key="NSExtension">NSImageView</string>
 						</object>
 						<object class="NSProgressIndicator" id="541557247">
@@ -93,8 +90,6 @@
 							<int key="NSvFlags">257</int>
 							<string key="NSFrame">{{548, 14}, {16, 16}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<int key="NSpiFlags">28938</int>
 							<double key="NSMaxValue">100</double>
 						</object>
@@ -103,7 +98,6 @@
 							<int key="NSvFlags">258</int>
 							<string key="NSFrame">{{41, 10}, {498, 20}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="541557247"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="106227149">
@@ -142,7 +136,6 @@
 							<int key="NSvFlags">265</int>
 							<string key="NSFrame">{{12, 11}, {27, 17}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="220680343"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="684642459">
@@ -176,7 +169,6 @@
 							<int key="NSvFlags">265</int>
 							<string key="NSFrame">{{15, 11}, {21, 17}}</string>
 							<reference key="NSSuperview" ref="708947105"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="177189960"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="875065009">
@@ -203,8 +195,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{580, 230}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="805529078"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1418}}</string>
@@ -475,7 +465,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>QSSBBezelBackgroundView</string>
+					<string>BBWhiteBezelBackgroundView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -562,14 +552,6 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">QSBezelBackgroundView</string>
-					<string key="superclassName">NSView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSBezelBackgroundView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">QSBorderlessWindow</string>
 					<string key="superclassName">QSWindow</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -578,59 +560,11 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">QSCollectingSearchObjectView</string>
-					<string key="superclassName">QSSearchObjectView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSCollectingSearchObjectView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">QSMenuButton</string>
 					<string key="superclassName">NSButton</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/QSMenuButton.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">QSObjectView</string>
-					<string key="superclassName">NSControl</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSObjectView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">QSSBBezelBackgroundView</string>
-					<string key="superclassName">QSBezelBackgroundView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSSBBezelBackgroundView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">QSSBCollectingSearchObjectView</string>
-					<string key="superclassName">QSCollectingSearchObjectView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSSBCollectingSearchObjectView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">QSSBSearchObjectView</string>
-					<string key="superclassName">QSSearchObjectView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSSBSearchObjectView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">QSSearchObjectView</string>
-					<string key="superclassName">QSObjectView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/QSSearchObjectView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

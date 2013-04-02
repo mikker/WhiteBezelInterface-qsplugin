@@ -1,16 +1,16 @@
 //
 //  QSSBBezelBackgroundView.m
-//  SquareBezel
+//  BBWhiteBezel
 //
 //  Created by Mikkel Malmberg on 4/2/13.
 //  Copyright (c) 2013 BRNBW. All rights reserved.
 //
 
-#import "QSSBBezelBackgroundView.h"
+#import "BBWhiteBezelBackgroundView.h"
 
 #define kBORDER_WIDTH 10
 
-@implementation QSSBBezelBackgroundView
+@implementation BBWhiteBezelBackgroundView
 
 - (void)dealloc
 {

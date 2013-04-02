@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E42A8DF5170A06B8007CC713 /* QSSBInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */; };
-		E42A8DFA170A2AD1007CC713 /* QSSBObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E42A8DF9170A2AD1007CC713 /* QSSBObjectView.m */; };
+		E42A8DF5170A06B8007CC713 /* BBWhiteBezelInterface.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42A8DF4170A06B8007CC713 /* BBWhiteBezelInterface.xib */; };
+		E42A8DFA170A2AD1007CC713 /* BBWhiteBezelObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E42A8DF9170A2AD1007CC713 /* BBWhiteBezelObjectView.m */; };
 		E470B7E31709F3A0000169F2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470B7E21709F3A0000169F2 /* Cocoa.framework */; };
 		E470B7E91709F3A0000169F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E470B7E71709F3A0000169F2 /* InfoPlist.strings */; };
-		E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */; };
-		E487A50B170AD89200478BCA /* QSSBBezelBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */; };
+		E470B7F81709F3A0000169F2 /* BBWhiteBezelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F71709F3A0000169F2 /* BBWhiteBezelInterface.m */; };
+		E487A50B170AD89200478BCA /* BBWhiteBezelBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E487A50A170AD89200478BCA /* BBWhiteBezelBackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSSBInterface.xib; sourceTree = "<group>"; };
-		E42A8DF8170A2AD1007CC713 /* QSSBObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSBObjectView.h; sourceTree = "<group>"; };
-		E42A8DF9170A2AD1007CC713 /* QSSBObjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSBObjectView.m; sourceTree = "<group>"; };
-		E470B7DF1709F3A0000169F2 /* SquareBezel.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareBezel.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42A8DF4170A06B8007CC713 /* BBWhiteBezelInterface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBWhiteBezelInterface.xib; sourceTree = "<group>"; };
+		E42A8DF8170A2AD1007CC713 /* BBWhiteBezelObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWhiteBezelObjectView.h; sourceTree = "<group>"; };
+		E42A8DF9170A2AD1007CC713 /* BBWhiteBezelObjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBWhiteBezelObjectView.m; sourceTree = "<group>"; };
+		E470B7DF1709F3A0000169F2 /* WhiteBezel.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteBezel.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E470B7E21709F3A0000169F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E470B7E61709F3A0000169F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		E470B7E81709F3A0000169F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -29,10 +29,10 @@
 		E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		E470B7EF1709F3A0000169F2 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		E470B7F01709F3A0000169F2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSSquareBezelInterface.h; sourceTree = "<group>"; };
-		E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSSquareBezelInterface.m; sourceTree = "<group>"; };
-		E487A509170AD89200478BCA /* QSSBBezelBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSBBezelBackgroundView.h; sourceTree = "<group>"; };
-		E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSBBezelBackgroundView.m; sourceTree = "<group>"; };
+		E470B7F61709F3A0000169F2 /* BBWhiteBezelInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBWhiteBezelInterface.h; sourceTree = "<group>"; };
+		E470B7F71709F3A0000169F2 /* BBWhiteBezelInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBWhiteBezelInterface.m; sourceTree = "<group>"; };
+		E487A509170AD89200478BCA /* BBWhiteBezelBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWhiteBezelBackgroundView.h; sourceTree = "<group>"; };
+		E487A50A170AD89200478BCA /* BBWhiteBezelBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBWhiteBezelBackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		E470B7D51709F3A0000169F2 = {
 			isa = PBXGroup;
 			children = (
-				E470B7E41709F3A0000169F2 /* SquareBezel */,
+				E470B7E41709F3A0000169F2 /* WhiteBezel */,
 				E470B7E11709F3A0000169F2 /* Frameworks */,
 				E470B7E01709F3A0000169F2 /* Products */,
 			);
@@ -59,7 +59,7 @@
 		E470B7E01709F3A0000169F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E470B7DF1709F3A0000169F2 /* SquareBezel.qsplugin */,
+				E470B7DF1709F3A0000169F2 /* WhiteBezel.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,19 +72,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E470B7E41709F3A0000169F2 /* SquareBezel */ = {
+		E470B7E41709F3A0000169F2 /* WhiteBezel */ = {
 			isa = PBXGroup;
 			children = (
-				E487A509170AD89200478BCA /* QSSBBezelBackgroundView.h */,
-				E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */,
-				E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */,
-				E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */,
-				E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */,
-				E42A8DF8170A2AD1007CC713 /* QSSBObjectView.h */,
-				E42A8DF9170A2AD1007CC713 /* QSSBObjectView.m */,
+				E487A509170AD89200478BCA /* BBWhiteBezelBackgroundView.h */,
+				E487A50A170AD89200478BCA /* BBWhiteBezelBackgroundView.m */,
+				E470B7F61709F3A0000169F2 /* BBWhiteBezelInterface.h */,
+				E470B7F71709F3A0000169F2 /* BBWhiteBezelInterface.m */,
+				E42A8DF4170A06B8007CC713 /* BBWhiteBezelInterface.xib */,
+				E42A8DF8170A2AD1007CC713 /* BBWhiteBezelObjectView.h */,
+				E42A8DF9170A2AD1007CC713 /* BBWhiteBezelObjectView.m */,
 				E470B7EA1709F3A0000169F2 /* Configuration */,
 				E470B7E51709F3A0000169F2 /* Supporting Files */,
 			);
+			name = WhiteBezel;
 			path = SquareBezel;
 			sourceTree = "<group>";
 		};
@@ -114,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E470B7DE1709F3A0000169F2 /* SquareBezel */ = {
+		E470B7DE1709F3A0000169F2 /* WhiteBezel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E470B7FB1709F3A0000169F2 /* Build configuration list for PBXNativeTarget "SquareBezel" */;
+			buildConfigurationList = E470B7FB1709F3A0000169F2 /* Build configuration list for PBXNativeTarget "WhiteBezel" */;
 			buildPhases = (
 				E470B7DA1709F3A0000169F2 /* ShellScript */,
 				E470B7DB1709F3A0000169F2 /* Sources */,
@@ -127,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = SquareBezel;
+			name = WhiteBezel;
 			productName = SquareBezel;
-			productReference = E470B7DF1709F3A0000169F2 /* SquareBezel.qsplugin */;
+			productReference = E470B7DF1709F3A0000169F2 /* WhiteBezel.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +142,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = BRNBW;
 			};
-			buildConfigurationList = E470B7D91709F3A0000169F2 /* Build configuration list for PBXProject "SquareBezel" */;
+			buildConfigurationList = E470B7D91709F3A0000169F2 /* Build configuration list for PBXProject "WhiteBezel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -153,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E470B7DE1709F3A0000169F2 /* SquareBezel */,
+				E470B7DE1709F3A0000169F2 /* WhiteBezel */,
 			);
 		};
 /* End PBXProject section */
@@ -164,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E470B7E91709F3A0000169F2 /* InfoPlist.strings in Resources */,
-				E42A8DF5170A06B8007CC713 /* QSSBInterface.xib in Resources */,
+				E42A8DF5170A06B8007CC713 /* BBWhiteBezelInterface.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */,
-				E42A8DFA170A2AD1007CC713 /* QSSBObjectView.m in Sources */,
-				E487A50B170AD89200478BCA /* QSSBBezelBackgroundView.m in Sources */,
+				E470B7F81709F3A0000169F2 /* BBWhiteBezelInterface.m in Sources */,
+				E42A8DFA170A2AD1007CC713 /* BBWhiteBezelObjectView.m in Sources */,
+				E487A50B170AD89200478BCA /* BBWhiteBezelBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +230,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhiteBezel;
 			};
 			name = Debug;
 		};
@@ -237,14 +238,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E470B7EE1709F3A0000169F2 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhiteBezel;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E470B7D91709F3A0000169F2 /* Build configuration list for PBXProject "SquareBezel" */ = {
+		E470B7D91709F3A0000169F2 /* Build configuration list for PBXProject "WhiteBezel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E470B7F91709F3A0000169F2 /* Debug */,
@@ -253,7 +254,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E470B7FB1709F3A0000169F2 /* Build configuration list for PBXNativeTarget "SquareBezel" */ = {
+		E470B7FB1709F3A0000169F2 /* Build configuration list for PBXNativeTarget "WhiteBezel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E470B7FC1709F3A0000169F2 /* Debug */,

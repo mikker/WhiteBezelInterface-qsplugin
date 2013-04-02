@@ -1,12 +1,12 @@
-#import "QSSquareBezelInterface.h"
+#import "BBWhiteBezelInterface.h"
 #import <QSInterface/QSBezelBackgroundView.h>
 #import <QSInterface/QSSearchObjectView.h>
 #import <QSInterface/QSInterface.h>
 #import <QSInterface/QSObjectCell.h>
 #import <QSEffects/QSWindow.h>
-#import "QSSBBezelBackgroundView.h"
+#import "BBWhiteBezelBackgroundView.h"
 
-@implementation QSSquareBezelInterface
+@implementation BBWhiteBezelInterface
 
 - (NSColor*)colorWithHexColorString:(NSString*)inColorString
 {
@@ -32,7 +32,7 @@
 }
 
 - (id)init {
-	return [self initWithWindowNibName:@"QSSBInterface"];
+	return [self initWithWindowNibName:@"BBWhiteBezelInterface"];
 }
 
 - (void)windowDidLoad {
@@ -57,7 +57,7 @@
 	[window setHideOffset:NSMakePoint(0,0)];
 	[window setShowOffset:NSMakePoint(0,0)];
 
-  QSSBBezelBackgroundView *bezelBackgroundView = (QSSBBezelBackgroundView *)[[self window] contentView];
+  BBWhiteBezelBackgroundView *bezelBackgroundView = (BBWhiteBezelBackgroundView *)[[self window] contentView];
   [bezelBackgroundView setRadius:8.0];
   [bezelBackgroundView setColor:whiteColor];
   [bezelBackgroundView setBorderColor:[NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.2]];
