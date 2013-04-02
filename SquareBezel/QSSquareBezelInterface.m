@@ -4,6 +4,7 @@
 #import <QSInterface/QSInterface.h>
 #import <QSInterface/QSObjectCell.h>
 #import <QSEffects/QSWindow.h>
+#import "QSSBBezelBackgroundView.h"
 
 @implementation QSSquareBezelInterface
 
@@ -53,16 +54,18 @@
 	// Set the window to be visible on all spaces
     [[self window] setCollectionBehavior:NSWindowCollectionBehaviorTransient];
 
-	[window setHideOffset:NSMakePoint(0, 0)];
-	[window setShowOffset:NSMakePoint(0, 0)];
+	[window setHideOffset:NSMakePoint(0,0)];
+	[window setShowOffset:NSMakePoint(0,0)];
 
-	[(QSBezelBackgroundView *)[[self window] contentView] setRadius:8.0];
-	[(QSBezelBackgroundView *)[[self window] contentView] setGlassStyle:QSGlossUpArc];
+  QSSBBezelBackgroundView *bezelBackgroundView = (QSSBBezelBackgroundView *)[[self window] contentView];
+  [bezelBackgroundView setRadius:8.0];
+  [bezelBackgroundView setColor:whiteColor];
+  [bezelBackgroundView setBorderColor:[NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.2]];
 
 	[[self window] setFrame:standardRect display:YES];
 
-  [self.window.contentView setColor:whiteColor];
-  [self.window setHasShadow:YES];
+  [self.window setHasShadow:NO];
+
   [commandView setTextColor:blackColor];
   [details setTextColor:blackTransparentColor];
   [details setFont:[NSFont fontWithName:fontName size:11]];

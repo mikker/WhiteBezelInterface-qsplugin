@@ -12,6 +12,7 @@
 		E470B7E31709F3A0000169F2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470B7E21709F3A0000169F2 /* Cocoa.framework */; };
 		E470B7E91709F3A0000169F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E470B7E71709F3A0000169F2 /* InfoPlist.strings */; };
 		E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */; };
+		E487A50B170AD89200478BCA /* QSSBBezelBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		E470B7F01709F3A0000169F2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSSquareBezelInterface.h; sourceTree = "<group>"; };
 		E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSSquareBezelInterface.m; sourceTree = "<group>"; };
+		E487A509170AD89200478BCA /* QSSBBezelBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSBBezelBackgroundView.h; sourceTree = "<group>"; };
+		E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSBBezelBackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 		E470B7E41709F3A0000169F2 /* SquareBezel */ = {
 			isa = PBXGroup;
 			children = (
+				E487A509170AD89200478BCA /* QSSBBezelBackgroundView.h */,
+				E487A50A170AD89200478BCA /* QSSBBezelBackgroundView.m */,
 				E470B7F61709F3A0000169F2 /* QSSquareBezelInterface.h */,
 				E470B7F71709F3A0000169F2 /* QSSquareBezelInterface.m */,
 				E42A8DF4170A06B8007CC713 /* QSSBInterface.xib */,
@@ -188,6 +193,7 @@
 			files = (
 				E470B7F81709F3A0000169F2 /* QSSquareBezelInterface.m in Sources */,
 				E42A8DFA170A2AD1007CC713 /* QSSBObjectView.m in Sources */,
+				E487A50B170AD89200478BCA /* QSSBBezelBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
