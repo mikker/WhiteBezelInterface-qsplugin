@@ -56,7 +56,7 @@
 - (NSRect)titleRectForBounds:(NSRect)theRect
 {
   NSRect rect = [super titleRectForBounds:theRect];
-  rect.size.height = rect.size.height + 6;
+  rect.size.height = rect.size.height + 8;
   return rect;
 }
 

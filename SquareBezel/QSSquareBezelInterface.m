@@ -43,7 +43,7 @@
   NSColor *blackColor = [self colorWithHexColorString:@"000000"];
   NSColor *blackTransparentColor = [NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.6];
 //  NSColor *purpleColor = [self colorWithHexColorString:@"B42C86"];
-  NSColor *highlighColor = [self colorWithHexColorString:@"EEEEEE"];
+  NSColor *highlighColor = [self colorWithHexColorString:@"DDDDDD"];
 
 	[super windowDidLoad];
 	QSWindow *window = (QSWindow *)[self window];
@@ -82,13 +82,14 @@
 		[theCell setShowDetails:NO];
 		[theCell setState:NSOnState];
     [theCell setAlignment:NSCenterTextAlignment];
-    [theCell setCellRadiusFactor:24];
+    [theCell setCellRadiusFactor:35];
     [theCell setBackgroundColor:whiteColor];
 //    [theCell setTextColor:purpleColor];
 		[theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
     [theCell setHighlightColor:highlighColor];
     [theCell setIconSize:NSSizeFromCGSize(CGSizeMake(96,96))];
-    [theCell setNameFont:[NSFont fontWithName:fontNameBold size:14]];
+    [theCell setNameFont:[NSFont fontWithName:fontNameBold size:16]];
+    [theCell setDetailsFont:[NSFont fontWithName:fontName size:12]];
   }
 
 	[self contractWindow:nil];
