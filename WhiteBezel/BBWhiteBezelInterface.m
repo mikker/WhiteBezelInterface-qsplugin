@@ -38,7 +38,7 @@
   NSColor *whiteColor = [self colorWithHexColorString:@"FFFFFF"];
   NSColor *blackColor = [self colorWithHexColorString:@"000000"];
   NSColor *blackTransparentColor = [NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.6];
-  NSColor *purpleColor = [self colorWithHexColorString:@"B42C86"];
+  NSColor *purpleColor = [self colorWithHexColorString:@"373086"];
   NSColor *highlighColor = [self colorWithHexColorString:@"DDDDDD"];
 
 	[super windowDidLoad];
