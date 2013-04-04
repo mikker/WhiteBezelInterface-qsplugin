@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 BRNBW. All rights reserved.
 //
 
-#import <QSInterface/QSInterface.h>
-
 @interface BBWhiteBezelSearchObjectView : QSSearchObjectView
 @end
 

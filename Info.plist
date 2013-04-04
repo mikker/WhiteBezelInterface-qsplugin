@@ -29,15 +29,13 @@
 			<string>Interfaces</string>
 		</array>
 		<key>description</key>
-		<string>One-line summary for this plug-in</string>
-		<key>extendedDescription</key>
-		<string>HTML formatted documentation for this plug-in.</string>
+		<string>A whiter version of the classic Bezel Interface</string>
 	</dict>
 	<key>QSRegistration</key>
 	<dict>
 		<key>QSCommandInterfaceControllers</key>
 		<dict>
-			<key>White Bezel Interface</key>
+			<key>White Bezel</key>
 			<string>BBWhiteBezelInterface</string>
 		</dict>
 	</dict>

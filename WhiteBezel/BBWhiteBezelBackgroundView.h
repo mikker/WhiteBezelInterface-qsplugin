@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 BRNBW. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
-#import <QSEffects/QSShading.h>
-
 @interface BBWhiteBezelBackgroundView : NSView
 {
   NSColor *color;

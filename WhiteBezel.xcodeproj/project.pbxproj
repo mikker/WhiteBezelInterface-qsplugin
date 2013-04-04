@@ -85,8 +85,7 @@
 				E470B7EA1709F3A0000169F2 /* Configuration */,
 				E470B7E51709F3A0000169F2 /* Supporting Files */,
 			);
-			name = WhiteBezel;
-			path = SquareBezel;
+			path = WhiteBezel;
 			sourceTree = "<group>";
 		};
 		E470B7E51709F3A0000169F2 /* Supporting Files */ = {
