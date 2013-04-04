@@ -38,18 +38,22 @@
   NSColor *whiteColor = [self colorWithHexColorString:@"FFFFFF"];
   NSColor *blackColor = [self colorWithHexColorString:@"000000"];
   NSColor *blackTransparentColor = [NSColor colorWithCalibratedRed:0 green:0 blue:0 alpha:0.6];
-//  NSColor *purpleColor = [self colorWithHexColorString:@"B42C86"];
+  NSColor *purpleColor = [self colorWithHexColorString:@"B42C86"];
   NSColor *highlighColor = [self colorWithHexColorString:@"DDDDDD"];
 
 	[super windowDidLoad];
 	QSWindow *window = (QSWindow *)[self window];
 	[window setLevel:NSPopUpMenuWindowLevel];
 	[window setBackgroundColor:[NSColor clearColor]];
-	
+
 	// Set the window to be visible on all spaces
     [[self window] setCollectionBehavior:NSWindowCollectionBehaviorTransient];
 
-	[window setHideOffset:NSMakePoint(0,0)];
+  [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithDouble:0.15], @"duration", nil] forKey:kQSWindowExecEffect];
+	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide", @"type", [NSNumber numberWithDouble:0.15], @"duration", nil] forKey:kQSWindowFadeEffect];
+	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithDouble:0.25], @"duration", nil, [NSNumber numberWithDouble:0.25] , @"brightnessB", @"QSStandardBrightBlending", @"brightnessFn", nil] forKey:kQSWindowCancelEffect];
+
+  [window setHideOffset:NSMakePoint(0,0)];
 	[window setShowOffset:NSMakePoint(0,0)];
 
   BBWhiteBezelBackgroundView *bezelBackgroundView = (BBWhiteBezelBackgroundView *)[[self window] contentView];
@@ -82,8 +86,8 @@
     [theCell setAlignment:NSCenterTextAlignment];
     [theCell setCellRadiusFactor:35];
     [theCell setBackgroundColor:whiteColor];
-//    [theCell setTextColor:purpleColor];
-		[theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+    [theCell setTextColor:purpleColor];
+//		[theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
     [theCell setHighlightColor:highlighColor];
     [theCell setIconSize:NSSizeFromCGSize(CGSizeMake(96,96))];
     [theCell setNameFont:[NSFont fontWithName:fontNameBold size:16]];

@@ -39,9 +39,7 @@
   NSRectFill(rect);
 
   // Background
-  NSLog(@"rect:%@", NSStringFromRect(rect));
   rect = NSRectFromCGRect(CGRectMake(rect.origin.x + kBORDER_WIDTH, rect.origin.y + kBORDER_WIDTH, rect.size.width - 2*kBORDER_WIDTH, rect.size.height - 2*kBORDER_WIDTH));
-  NSLog(@"rect:%@", NSStringFromRect(rect));
   roundRect = [NSBezierPath bezierPath];
 	minRadius = MIN(NSWidth(rect), NSHeight(rect)) / 2;
 	if (radius < 0)

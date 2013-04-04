@@ -75,11 +75,11 @@
 		E470B7E41709F3A0000169F2 /* WhiteBezel */ = {
 			isa = PBXGroup;
 			children = (
-				E487A509170AD89200478BCA /* BBWhiteBezelBackgroundView.h */,
-				E487A50A170AD89200478BCA /* BBWhiteBezelBackgroundView.m */,
 				E470B7F61709F3A0000169F2 /* BBWhiteBezelInterface.h */,
 				E470B7F71709F3A0000169F2 /* BBWhiteBezelInterface.m */,
 				E42A8DF4170A06B8007CC713 /* BBWhiteBezelInterface.xib */,
+				E487A509170AD89200478BCA /* BBWhiteBezelBackgroundView.h */,
+				E487A50A170AD89200478BCA /* BBWhiteBezelBackgroundView.m */,
 				E42A8DF8170A2AD1007CC713 /* BBWhiteBezelObjectView.h */,
 				E42A8DF9170A2AD1007CC713 /* BBWhiteBezelObjectView.m */,
 				E470B7EA1709F3A0000169F2 /* Configuration */,
